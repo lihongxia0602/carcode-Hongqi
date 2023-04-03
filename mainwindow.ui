@@ -1,0 +1,3938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2000</width>
+    <height>996</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>2</horstretch>
+    <verstretch>2</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="tabletTracking">
+   <bool>true</bool>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::WheelFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ASU EOL LIN测试工具2.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>2</horstretch>
+        <verstretch>2</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>true</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::tab {
+  width:200;
+  background: rgb(245, 245, 245); 
+  border: 1px solid lightgray; 
+  padding: 10px;
+} 
+
+QTabBar::tab:selected {
+  background: rgb(67, 167, 255); 
+  margin-bottom: -1px; 
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>200</width>
+        <height>100</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="widget">
+       <attribute name="title">
+        <string>Tab 1</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout" stretch="0">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>                                              LOG日志保存在当前路径EOLTest文件夹下</string>
+            </property>
+            <widget class="QFrame" name="frame_4">
+             <property name="geometry">
+              <rect>
+               <x>390</x>
+               <y>50</y>
+               <width>1121</width>
+               <height>805</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <widget class="QLabel" name="label_eol_test">
+              <property name="geometry">
+               <rect>
+                <x>400</x>
+                <y>10</y>
+                <width>250</width>
+                <height>25</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun-ExtB</family>
+                <pointsize>14</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>EOL测试项</string>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame_6">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>50</y>
+                <width>1091</width>
+                <height>745</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QFrame" name="frame_8">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>10</y>
+                 <width>330</width>
+                 <height>390</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>9</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <layout class="QGridLayout" name="gridLayout">
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_44">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>16V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="1">
+                 <widget class="QPushButton" name="pushButton15VolIdle">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_33">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>09V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QPushButton" name="pushButton9VolSleep">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_37">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>09V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QPushButton" name="pushButton15VolSleep">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QPushButton" name="pushButton9VolIdle">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QPushButton" name="pushButtonVolIdle">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_16">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>待机电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_34">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>13V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QPushButton" name="pushButton13VolIdle">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="7" column="0">
+                 <widget class="QLabel" name="label_35">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>16V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_36">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>静态电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pushButtonVolSleep">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_38">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>13V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="pushButton13VolSleep">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="frame_9">
+               <property name="geometry">
+                <rect>
+                 <x>380</x>
+                 <y>10</y>
+                 <width>330</width>
+                 <height>390</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="5" column="0">
+                 <widget class="QLabel" name="label_77">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>硬件版本号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_29">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>16V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QPushButton" name="pushButtonVolNormal">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="0">
+                 <widget class="QLabel" name="label_39">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>过压故障测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_76">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>软件版本号</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_17">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>09V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QPushButton" name="pushButton9VolNormal">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QPushButton" name="pushButton15VolNormal">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="1">
+                 <widget class="QPushButton" name="pushButtonVolClear">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_14">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>工作电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_28">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>13V电压测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QPushButton" name="pushButton13VolNormal">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="11" column="0">
+                 <widget class="QLabel" name="label_41">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>故障清除测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QPushButton" name="pushButtonSw">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="5" column="1">
+                 <widget class="QPushButton" name="pushButtonHw">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="8" column="1">
+                 <widget class="QPushButton" name="pushButtonVolHigh">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="0">
+                 <widget class="QLabel" name="label_40">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>欠压故障测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="9" column="1">
+                 <widget class="QPushButton" name="pushButtonVolLow">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QFrame" name="frame_18">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>400</y>
+                 <width>1071</width>
+                 <height>340</height>
+                </rect>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <widget class="QFrame" name="frame_21">
+                <property name="geometry">
+                 <rect>
+                  <x>400</x>
+                  <y>10</y>
+                  <width>321</width>
+                  <height>130</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_9">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_21">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>待机09V       </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit9VAIdleRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_22">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_23">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>待机13V       </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit13VAIdleRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_24">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_29" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_25">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>待机16V       </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit15VAIdleRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_26">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_22">
+                <property name="geometry">
+                 <rect>
+                  <x>780</x>
+                  <y>10</y>
+                  <width>280</width>
+                  <height>130</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_30" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_18">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>工作09V</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit9VANormalRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_27">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_31" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_30">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>工作13V</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit13VANormalRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_31">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_32" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_32">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>工作16V</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit15VANormalRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_45">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QFrame" name="frame_20">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>10</y>
+                  <width>331</width>
+                  <height>130</height>
+                 </rect>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_24" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_10">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>静态09V     </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit9VASleepRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_25" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_12">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>静态13V     </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit13VASleepRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_26" stretch="3,6,1">
+                   <item>
+                    <widget class="QLabel" name="label_15">
+                     <property name="font">
+                      <font>
+                       <family>宋体</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>静态16V     </string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit15VASleepRet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>12</pointsize>
+                      </font>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_19">
+                     <property name="font">
+                      <font>
+                       <family>Arial</family>
+                       <pointsize>11</pointsize>
+                      </font>
+                     </property>
+                     <property name="text">
+                      <string>mA</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>140</y>
+                  <width>311</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="2,7,1">
+                 <item>
+                  <widget class="QLabel" name="label_74">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>投影照度        </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="BrightnessRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_79">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>lux</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>190</y>
+                  <width>311</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="2,7,1">
+                 <item>
+                  <widget class="QLabel" name="label_71">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>TOF响应时间</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="TofResponseTime">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_72">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>ms</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>290</y>
+                  <width>301</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_56">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>TOF踩踏距离     </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="TofDisRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_57">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>cm</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>190</y>
+                  <width>301</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="3,7,0">
+                 <item>
+                  <widget class="QLabel" name="label_75">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>投影畸变            </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="distortionRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_80">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>mm</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>240</y>
+                  <width>301</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="2,7,1">
+                 <item>
+                  <widget class="QLabel" name="label_46">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>TOF未踩踏距离</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="TofNotDisRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_58">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>cm</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>240</y>
+                  <width>311</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_2">
+                   <property name="font">
+                    <font>
+                     <family>宋体</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>硬件版本号  </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditHwRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>290</y>
+                  <width>311</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="3,7">
+                 <item>
+                  <widget class="QLabel" name="label">
+                   <property name="font">
+                    <font>
+                     <family>宋体</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>软件版本号  </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditSwRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="layoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>410</x>
+                  <y>140</y>
+                  <width>302</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="2,7,1">
+                 <item>
+                  <widget class="QLabel" name="label_73">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>12</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>投影直径            </string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="diameterRet">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>10</pointsize>
+                    </font>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_78">
+                   <property name="font">
+                    <font>
+                     <family>Arial</family>
+                     <pointsize>11</pointsize>
+                    </font>
+                   </property>
+                   <property name="text">
+                    <string>mm</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </widget>
+              <widget class="QFrame" name="frame_11">
+               <property name="geometry">
+                <rect>
+                 <x>750</x>
+                 <y>10</y>
+                 <width>330</width>
+                 <height>80</height>
+                </rect>
+               </property>
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::Box</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Sunken</enum>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_42">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>投影功能测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="1">
+                 <widget class="QPushButton" name="pushButtonTof">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QPushButton" name="pushButtonLogo">
+                  <property name="font">
+                   <font>
+                    <family>Arial</family>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                    <kerning>true</kerning>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>等待测试</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="6" column="0">
+                 <widget class="QLabel" name="label_43">
+                  <property name="font">
+                   <font>
+                    <family>宋体</family>
+                    <pointsize>12</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>TOF功能测试</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+             <widget class="Line" name="line">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>36</y>
+                <width>1120</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="frame">
+             <property name="geometry">
+              <rect>
+               <x>1530</x>
+               <y>50</y>
+               <width>341</width>
+               <height>805</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <widget class="QPushButton" name="pushButtonTestResult">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>270</y>
+                <width>303</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>18</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>等待测试结果</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonSave">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>380</y>
+                <width>303</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>18</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>保存测试结果</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonStartTest">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>560</y>
+                <width>303</width>
+                <height>100</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun-ExtB</family>
+                <pointsize>24</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>开始测试</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>19</width>
+                <height>16</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonEndTest">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>690</y>
+                <width>303</width>
+                <height>80</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>24</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>结束测试</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>140</y>
+                <width>301</width>
+                <height>111</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3" stretch="3,7">
+               <item>
+                <widget class="QLabel" name="label_pass_num">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(67, 167, 255)</string>
+                 </property>
+                 <property name="text">
+                  <string>当日总计合格数量</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_pass_num">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(224, 239, 255)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="layoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>301</width>
+                <height>111</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2" stretch="3,7">
+               <item>
+                <widget class="QLabel" name="label_total_test">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(67, 167, 255)</string>
+                 </property>
+                 <property name="text">
+                  <string>当日总计测试件</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="lineEdit_total_test">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>16</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(224, 239, 255)</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>50</y>
+               <width>361</width>
+               <height>71</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,8">
+              <item>
+               <widget class="QLabel" name="labelSn">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>产品SN </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditSN">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>14</pointsize>
+                 </font>
+                </property>
+                <property name="cursor">
+                 <cursorShape>IBeamCursor</cursorShape>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>150</y>
+               <width>361</width>
+               <height>705</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="title">
+              <string>LOG 日志</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <item row="0" column="0">
+               <widget class="QPlainTextEdit" name="PlainTextEdit_show">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Box</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_6">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="font">
+             <font>
+              <family>宋体</family>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QFrame" name="frame_3">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>300</width>
+               <height>120</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <widget class="QLabel" name="labelCtrl">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>200</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>控制串口选择</string>
+              </property>
+             </widget>
+             <widget class="myComboBox" name="comboBoxCtrl">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>250</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun</family>
+                <pointsize>11</pointsize>
+               </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>ArrowCursor</cursorShape>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="tabletTracking">
+               <bool>true</bool>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="toolTipDuration">
+               <number>1</number>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonCtrl">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>80</y>
+                <width>150</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="frame_5">
+             <property name="geometry">
+              <rect>
+               <x>560</x>
+               <y>10</y>
+               <width>300</width>
+               <height>120</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <widget class="QLabel" name="labelCcd">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>200</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>CCD串口选择</string>
+              </property>
+             </widget>
+             <widget class="myComboBox" name="comboBoxCcd">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>250</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="tabletTracking">
+               <bool>true</bool>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonCcd">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>80</y>
+                <width>150</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="frame_16">
+             <property name="geometry">
+              <rect>
+               <x>890</x>
+               <y>10</y>
+               <width>300</width>
+               <height>120</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <widget class="QLabel" name="labelPcl">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>200</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>PLC串口选择</string>
+              </property>
+             </widget>
+             <widget class="myComboBox" name="comboBoxPcl">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>250</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="tabletTracking">
+               <bool>true</bool>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonPcl">
+              <property name="geometry">
+               <rect>
+                <x>60</x>
+                <y>80</y>
+                <width>150</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QFrame" name="frame_7">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>140</y>
+               <width>1290</width>
+               <height>710</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <widget class="QLabel" name="label_eol_test_select">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>140</y>
+                <width>300</width>
+                <height>21</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>产品EOL测试选项</string>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame_14">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>170</y>
+                <width>1270</width>
+                <height>130</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <widget class="QCheckBox" name="checkBoxVolNormalSet">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>14</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>工作电压测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxVolSleepSet">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>14</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>静态电压测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxVolIdleSet">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>14</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>待机电压测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxLogoSet">
+               <property name="geometry">
+                <rect>
+                 <x>11</x>
+                 <y>50</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>投影功能测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxTofSet">
+               <property name="geometry">
+                <rect>
+                 <x>250</x>
+                 <y>50</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>TOF功能测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxVolClearSet">
+               <property name="geometry">
+                <rect>
+                 <x>1030</x>
+                 <y>20</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>故障清除测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxVolHighSet">
+               <property name="geometry">
+                <rect>
+                 <x>790</x>
+                 <y>20</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>过压故障测试</string>
+               </property>
+              </widget>
+              <widget class="QCheckBox" name="checkBoxVolLowSet">
+               <property name="geometry">
+                <rect>
+                 <x>510</x>
+                 <y>50</y>
+                 <width>200</width>
+                 <height>20</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>欠压故障测试</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonChooseAll">
+               <property name="geometry">
+                <rect>
+                 <x>910</x>
+                 <y>80</y>
+                 <width>150</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>SimSun</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>全选</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonClearAll">
+               <property name="geometry">
+                <rect>
+                 <x>1100</x>
+                 <y>80</y>
+                 <width>150</width>
+                 <height>40</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>SimSun</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>全清</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QFrame" name="frame_12">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>1270</width>
+                <height>120</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <widget class="QLabel" name="label_20">
+               <property name="geometry">
+                <rect>
+                 <x>780</x>
+                 <y>40</y>
+                 <width>150</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>测试选择</string>
+               </property>
+              </widget>
+              <widget class="QLabel" name="label_select_project">
+               <property name="geometry">
+                <rect>
+                 <x>10</x>
+                 <y>40</y>
+                 <width>150</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>项目选择</string>
+               </property>
+              </widget>
+              <widget class="QComboBox" name="comboBoxProject">
+               <property name="geometry">
+                <rect>
+                 <x>130</x>
+                 <y>40</y>
+                 <width>210</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonBoardTest">
+               <property name="geometry">
+                <rect>
+                 <x>950</x>
+                 <y>80</y>
+                 <width>300</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>电路板测试</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonEolTest">
+               <property name="geometry">
+                <rect>
+                 <x>950</x>
+                 <y>40</y>
+                 <width>300</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>EOL测试</string>
+               </property>
+              </widget>
+              <widget class="QPushButton" name="pushButtonFuncTest">
+               <property name="geometry">
+                <rect>
+                 <x>950</x>
+                 <y>0</y>
+                 <width>300</width>
+                 <height>35</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>宋体</family>
+                 <pointsize>12</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>功能测试</string>
+               </property>
+              </widget>
+             </widget>
+             <widget class="QLabel" name="label_select_param">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>320</y>
+                <width>200</width>
+                <height>28</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="text">
+               <string>参数设置</string>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame_13">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>350</y>
+                <width>1270</width>
+                <height>350</height>
+               </rect>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>1</number>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_6">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_tof_value">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>TOF未踩踏距离</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEditNotTofDis">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QLabel" name="label_47">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>cm</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QLabel" name="label_tof_value_2">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>TOF踩踏距离</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="4">
+                <widget class="QLineEdit" name="lineEditTofDis">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="5">
+                <widget class="QLabel" name="label_48">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>cm</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="6">
+                <widget class="QLabel" name="label_current_value">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>电压浮动值</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="7">
+                <widget class="QLineEdit" name="lineEditVolFloat">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="8">
+                <widget class="QLabel" name="label_52">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mV</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_vol_value_11">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V工作最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineEdit9VNorCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QLabel" name="label_61">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="3">
+                <widget class="QLabel" name="label_vol_value_3">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V工作最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="4">
+                <widget class="QLineEdit" name="lineEdit13VNorCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="5">
+                <widget class="QLabel" name="label_63">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="6">
+                <widget class="QLabel" name="label_vol_value_4">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V工作最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="7">
+                <widget class="QLineEdit" name="lineEdit15VNorCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="8">
+                <widget class="QLabel" name="label_64">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_vol_value_12">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V工作最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QLineEdit" name="lineEdit9VNorCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="2">
+                <widget class="QLabel" name="label_49">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QLabel" name="label_vol_value_13">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V工作最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="4">
+                <widget class="QLineEdit" name="lineEdit13VNorCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="5">
+                <widget class="QLabel" name="label_53">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="6">
+                <widget class="QLabel" name="label_vol_value_14">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V工作最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="7">
+                <widget class="QLineEdit" name="lineEdit15VNorCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="8">
+                <widget class="QLabel" name="label_54">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_vol_value_5">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V静态最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QLineEdit" name="lineEdit9VSleepCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QLabel" name="label_65">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="3">
+                <widget class="QLabel" name="label_vol_value_6">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V静态最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="4">
+                <widget class="QLineEdit" name="lineEdit13VSleepCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="5">
+                <widget class="QLabel" name="label_66">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="6">
+                <widget class="QLabel" name="label_vol_value_7">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V静态最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="7">
+                <widget class="QLineEdit" name="lineEdit15VSleepCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="8">
+                <widget class="QLabel" name="label_67">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QLabel" name="label_vol_value_15">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V静态最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QLineEdit" name="lineEdit9VSleepCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="2">
+                <widget class="QLabel" name="label_50">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="3">
+                <widget class="QLabel" name="label_vol_value_16">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V静态最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="4">
+                <widget class="QLineEdit" name="lineEdit13VSleepCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="5">
+                <widget class="QLabel" name="label_51">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="6">
+                <widget class="QLabel" name="label_vol_value_17">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V静态最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="7">
+                <widget class="QLineEdit" name="lineEdit15VSleepCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="8">
+                <widget class="QLabel" name="label_55">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="label_vol_value_8">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V待机最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QLineEdit" name="lineEdit9VIdleCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="2">
+                <widget class="QLabel" name="label_68">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="3">
+                <widget class="QLabel" name="label_vol_value_10">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V待机最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="4">
+                <widget class="QLineEdit" name="lineEdit13VIdleCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="5">
+                <widget class="QLabel" name="label_69">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="6">
+                <widget class="QLabel" name="label_vol_value_9">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V待机最小电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="7">
+                <widget class="QLineEdit" name="lineEdit15VIdleCurMin">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="8">
+                <widget class="QLabel" name="label_70">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="label_vol_value_18">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>9V待机最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="1">
+                <widget class="QLineEdit" name="lineEdit9VIdleCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="2">
+                <widget class="QLabel" name="label_59">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="3">
+                <widget class="QLabel" name="label_vol_value_20">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>13V待机最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="4">
+                <widget class="QLineEdit" name="lineEdit13VIdleCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="5">
+                <widget class="QLabel" name="label_60">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="6">
+                <widget class="QLabel" name="label_vol_value_21">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>16V待机最大电流</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="7">
+                <widget class="QLineEdit" name="lineEdit15VIdleCurMax">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="8">
+                <widget class="QLabel" name="label_62">
+                 <property name="font">
+                  <font>
+                   <family>SimSun</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>mA</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0">
+                <widget class="QLabel" name="label_hw">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>硬件版本号</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="1">
+                <widget class="QLineEdit" name="lineEditHwSet">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="3">
+                <widget class="QLabel" name="label_sw">
+                 <property name="font">
+                  <font>
+                   <family>宋体</family>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>软件版本号</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="4">
+                <widget class="QLineEdit" name="lineEditSwSet">
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QPushButton" name="pushButtonImportXml">
+             <property name="geometry">
+              <rect>
+               <x>1570</x>
+               <y>460</y>
+               <width>250</width>
+               <height>80</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>宋体</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>导入默认参数</string>
+             </property>
+            </widget>
+            <widget class="QPushButton" name="pushButtonSaveSetting">
+             <property name="geometry">
+              <rect>
+               <x>1570</x>
+               <y>590</y>
+               <width>250</width>
+               <height>80</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>宋体</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>保存参数设置</string>
+             </property>
+            </widget>
+            <widget class="QFrame" name="frame_19">
+             <property name="geometry">
+              <rect>
+               <x>1220</x>
+               <y>10</y>
+               <width>300</width>
+               <height>120</height>
+              </rect>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Sunken</enum>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <widget class="QLabel" name="labelims">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>200</width>
+                <height>20</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>IMS串口选择</string>
+              </property>
+             </widget>
+             <widget class="myComboBox" name="myComboBoxIMS">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>40</y>
+                <width>250</width>
+                <height>30</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>SimSun</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="tabletTracking">
+               <bool>true</bool>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::StrongFocus</enum>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="pushButtonims">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>80</y>
+                <width>150</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>20</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>宋体</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>打开串口</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_ims" native="true">
+              <property name="geometry">
+               <rect>
+                <x>170</x>
+                <y>70</y>
+                <width>120</width>
+                <height>50</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>查询测试 结果</string>
+       </attribute>
+       <widget class="QWidget" name="widget" native="true">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>1931</width>
+          <height>841</height>
+         </rect>
+        </property>
+        <widget class="QTextEdit" name="textEdit_search">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>120</y>
+           <width>911</width>
+           <height>721</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>30</y>
+           <width>380</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Arial</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="title">
+          <string>项目选择</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <widget class="QComboBox" name="comboBoxSearch">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>350</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <item>
+           <property name="text">
+            <string>C03</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>C206</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="widget_calendar" native="true">
+         <property name="geometry">
+          <rect>
+           <x>1560</x>
+           <y>110</y>
+           <width>361</width>
+           <height>331</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_5">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>300</y>
+           <width>380</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>宋体</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>EOL测试</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>570</x>
+           <y>30</y>
+           <width>911</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_12" stretch="2,6,2">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string> 产品SN</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_SN_Search">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_search">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>  查询</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>1560</x>
+           <y>30</y>
+           <width>361</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>  选择 日期</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditCalendar">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2000</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>myComboBox</class>
+   <extends>QComboBox</extends>
+   <header>mycombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

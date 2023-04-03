@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Config>
+    <Param>
+        <project_name>C03</project_name>
+	    <hw_version>H04</hw_version>
+        <sw_version>S2.008</sw_version>
+        <float_vol>1</float_vol>
+        <v9_normal_current_min>100</v9_normal_current_min>
+        <v13_normal_current_min>100</v13_normal_current_min>
+        <v15_normal_current_min>100</v15_normal_current_min>
+        <v9_sleep_current_min>0</v9_sleep_current_min>
+        <v13_sleep_current_min>0</v13_sleep_current_min>
+        <v15_sleep_current_min>0</v15_sleep_current_min>
+        <v9_idle_current_min>20</v9_idle_current_min>
+        <v13_idle_current_min>20</v13_idle_current_min>
+        <v15_idle_current_min>20</v15_idle_current_min>
+        <v9_normal_current_max>1000</v9_normal_current_max>
+        <v13_normal_current_max>1000</v13_normal_current_max>
+        <v15_normal_current_max>1000</v15_normal_current_max>
+        <v9_sleep_current_max>0</v9_sleep_current_max>
+        <v13_sleep_current_max>0</v13_sleep_current_max>
+        <v15_sleep_current_max>0</v15_sleep_current_max>
+        <v9_idle_current_max>100</v9_idle_current_max>
+        <v13_idle_current_max>100</v13_idle_current_max>
+        <v15_idle_current_max>100</v15_idle_current_max>
+        <tof_not_distance>47</tof_not_distance>
+        <tof_distance>55</tof_distance>
+    </Param>
+</Config>

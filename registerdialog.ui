@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterDialog</class>
+ <widget class="QDialog" name="RegisterDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>用户名</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>密码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_user_add">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>150</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pwd_add">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>150</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="confirmButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelButton">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>宋体</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
